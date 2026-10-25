@@ -1,6 +1,29 @@
-.header{
-    padding:20px;
+:host {
+    display: block;
+    font-family: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+}
+
+.header {
+    padding: clamp(2rem, 5vw, 3.5rem) 1.5rem;
+    color: #ffffff;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 55%, #134e4a 100%);
     text-align: center;
-    color: rgb(6, 192, 62);
-    background-color: rgb(58, 53, 53);
+    box-shadow: 0 0.5rem 1.5rem rgba(15, 23, 42, 0.2);
+}
+
+h1 {
+    margin: 0;
+    font-size: clamp(1.75rem, 4.5vw, 2.75rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 3.5rem;
+    height: 0.25rem;
+    margin: 0.9rem auto 0;
+    border-radius: 999px;
+    background: #2dd4bf;
 }

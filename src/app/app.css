@@ -1,0 +1,37 @@
+:host {
+    display: block;
+    min-height: 100vh;
+    padding-bottom: 3rem;
+    background: #f1f5f9;
+    font-family: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+}
+
+/* Selected car details */
+
+.car-details {
+    width: min(100% - 2rem, 48rem);
+    margin: 0 auto;
+    padding: 1.75rem 2rem;
+    border: 1px solid #e2e8f0;
+    border-top: 4px solid #0d9488;
+    border-radius: 1rem;
+    color: #475569;
+    background: #ffffff;
+    box-shadow: 0 0.5rem 1.5rem rgba(15, 23, 42, 0.08);
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+/* The model name is the first line of the card */
+.car-details::first-line {
+    color: #0f172a;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2.2;
+}
+
+@media (max-width: 30rem) {
+    .car-details {
+        padding: 1.25rem;
+    }
+}

@@ -2,8 +2,10 @@
 <app-search-bar [autos]="autoList" (onSelectCar)="selectCar($event)"></app-search-bar>
 
 @if(selectedCar){
-    {{selectedCar.model}} <br>
-    {{selectedCar.description}} <br>
+    <div class="car-details">
+        {{selectedCar.model}} <br>
+        {{selectedCar.description}} <br>
+    </div>
 }
 
 
